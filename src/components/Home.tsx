@@ -1,4 +1,3 @@
-import logo from "assets/logo.svg";
 import { getGames } from "epic-free-games";
 
 const Home = () => {
@@ -12,7 +11,6 @@ const Home = () => {
 
   return (
     <div className="App">
-      <img src={logo} className="App-logo" alt="logo" />
       <p>
         Edit components in <code>src/components/</code> and save to reload.
       </p>
