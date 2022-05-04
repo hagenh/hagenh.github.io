@@ -20,7 +20,7 @@ const App = () => {
   const navigate = useNavigate();
   return (
     <Nav
-      appName="App Name"
+      appName="Hagens Badass Website"
       logoOnClick={(e) => {
         e.preventDefault();
         navigate("/");

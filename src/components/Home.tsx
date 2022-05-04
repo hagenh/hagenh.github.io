@@ -1,6 +1,15 @@
 import logo from "assets/logo.svg";
+import { getGames } from "epic-free-games";
 
-const Home = () => (
+const Home = () => {
+  
+  getGames("JP", true).then(res => {
+  console.log(res)
+  }).catch(err => {
+  // Do something
+  });
+
+  return(
   <div className="App">
     <img src={logo} className="App-logo" alt="logo" />
     <p>
@@ -15,6 +24,6 @@ const Home = () => (
       Learn React
     </a>
   </div>
-);
+)};
 
 export default Home;
